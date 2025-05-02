@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losowanie kardynała</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #ADD8E6;
+        }
+        .container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 80%;
+            max-width: 600px;
+        }
+        button {
+            padding: 15px 64px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result-container {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            min-height: 60px;
+        }
+		#cardinal { 
+			margin-top: 20px; 
+			font-size: 24px; 
+			font-weight: bold; 
+		} 
+		#country { 
+			margin-top: 10px; 
+			font-size: 18px; 
+			font-weight: normal;
+		}
+        #returnResult {
+            display: none;
+        }
+        .prayer-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+        .prayer-title {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Losowanie kardynała</h1>
+        <button id="drawResult" onclick="drawCardinal()">Losuj</button>
+        <button id="returnResult" onclick="resetSelection()">Wróć do losowania</button>
+        <div class="result-container">
+            <div id="cardinal"></div>
+            <div id="country"></div>
+        </div>
+        <br>
+        <div class="prayer-title">
+            <p>Modlitwa</p>
+        </div>
+        <div class="prayer-container">
+            <p>Pokornie błagamy Cię, Panie, abyś w swojej niezmierzonej dobroci raczył udzielić wylosowanemu przeze mnie kardynałowi wszelkich łask potrzebnych mu na nadchodzące konklawe. Niech Duch Święty oświeca jego umysł, tak by wybór, którego ma dokonać był zgodny z wolą Bożą, a nie ludzką. Udziel najświętszemu Kościołowi rzymskiemu papieża, który przez swoją gorliwość dla nas, był Ci miły, a przez swoje dobre rządy prowadził Twój lud ku świętości. Przez Pana naszego Jezusa Chrystusa, Twojego Syna, który z Tobą żyje i króluje w jedności Ducha Świętego, Bóg, na wieki wieków.</p>
+            <p>Amen</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
